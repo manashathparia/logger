@@ -8,7 +8,7 @@ app.use(json());
 let logs = [];
 
 app.post('/', (req, res) => {
-    if (req.query.reset) {
+    if (req.query.reset === 'true') {
         logs = [];
     }
 
